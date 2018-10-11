@@ -19,7 +19,7 @@ At the end the console prints the specified order of all the pizzas, wether the 
   printing the amount of topping using a sum VAR.
 
 ### Result Image
-![](result.png)
+![](Result.png)
 
 ***
  ### Author
