@@ -1,22 +1,29 @@
 # HomeWork 10/10/2018
-## Pizza
+## Airline
 ***
 
 
 
-In this project I've created an order of 5 pizzas with different diameters, number of slices and number of toppings.
-At the end the console prints the specified order of all the pizzas, wether the pizza is basic or not, and the total amount of toppings in the entire order.
+In this project I've created an simulation of an airline. It has Pilot, Flight attendant, Ground attendant, and passanger.
+I've created a Person Class to hold the mutual proporties and super.print().
 
 ### Classes
 
-* **Pizza** - defines the chracters of the pizza object, Getters and Setters, Constractor and 2 methods.
-1. print() -prints info of entire Pizza object.
-2. isBasicPizza() -return boolean true if the pizza object has no toppings and returns false if the Pizza object has toppings .
+* **Person** - defines the names, G&S's, CTOR and method.
+1. print() -prints info of Person names.
 
-* **Program** - main program
-  creating an Arrey of Pizza called pizzaOrder and     setting the objects values.
-  printing the entire Arrey info using  **print()** and if the pizza is basic using  **isBasicPizza()**.
-  printing the amount of topping using a sum VAR.
+* **Pilot** - defines the Pilots license number,	experience, G&S's, CTOR and method.
+1. print() -prints Pilots info and call o super (Person) to print name info.
+
+* **Passenger** - defines the Passenger Passport number, G&S's, CTOR and method.
+1. print() -prints Passenger info and call o super (Person) to print name info.
+
+* **LandStu** - defines the Ground attendant Job title, Country,	experience, G&S's, CTOR and method.
+1. print() -prints Ground attendant info and call o super (Person) to print name info.
+
+* **AirStu** - defines the Flight attendant Working class, Country,	experience, G&S's, CTOR and method.
+1. print() -prints Flight attendant info and call o super (Person) to print name info.
+
 
 ### Result Image
 ![](Result.png)
