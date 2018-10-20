@@ -24,6 +24,9 @@ I've created a Person Class to hold the mutual proporties and super.print().
 * **AirStu** - defines the Flight attendant Working class, Country,	experience, G&S's, CTOR and method.
 1. print() -prints Flight attendant info and call o super (Person) to print name info.
 
+* **App** - defines an Array of "Persons", and inserting an object info of deferent objeccts to it.
+A loop is runing on the Array and checking instanceof to cast the right object and activate print().
+1. print() -prints Flight attendant info and call o super (Person) to print name info.
 
 ### Result Image
 ![](Result.png)
