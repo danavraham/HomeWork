@@ -36,7 +36,7 @@ than it sends each oject to get its random flight speed, and then it sends an or
 1. createIFly() -returns a random IFly.
 
 ### Result Image
-![](Result.png)
+![](result.png)
 
 ***
  ### Author
