@@ -4,6 +4,7 @@ public class App {
 	public static int createSpeed() {
 		int randSpeed = (int)((Math.random()*50+50));
 		return randSpeed;
+		
 	}
 	public static IFly createIFly(){
 		int rand = (int)(Math.random()*3);
