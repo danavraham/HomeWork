@@ -38,9 +38,9 @@ public class Bird implements IFly {
 	}
 
 	@Override
-	public boolean land() {
+	public boolean isLand() {
 		System.out.println("The bird has successfully landed!");
-		return false;
+		return true;
 	}
 
 }

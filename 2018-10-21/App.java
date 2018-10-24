@@ -2,7 +2,7 @@ package fly;
 
 public class App {
 	public static int createSpeed() {
-		int randSpeed = (int)(Math.random()*50+50);
+		int randSpeed = (int)((Math.random()*50+50));
 		return randSpeed;
 	}
 	public static IFly createIFly(){
@@ -29,7 +29,7 @@ public class App {
 			iflys[i]=createIFly();
 			System.out.println("-------new object #"+(i+1)+"------------");
 			iflys[i].fly(createSpeed());
-			iflys[i].land();
+			iflys[i].isLand();
 			System.out.println();
 		}
 			

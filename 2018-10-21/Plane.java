@@ -14,9 +14,9 @@ public class Plane implements IFly  {
 	}
 
 	@Override
-	public boolean land() {
+	public boolean isLand() {
 		System.out.println("The Plane has successfully landed!");
-		return false;
+		return true;
 	}
 	
 	
