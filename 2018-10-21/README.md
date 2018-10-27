@@ -1,35 +1,42 @@
-# HomeWork 10/10/2018
-## Airline
+# ClassWork 21/10/2018
+## Interface
 ***
 
 
 
-In this project I've created an simulation of an airline. It has Pilot, Flight attendant, Ground attendant, and passanger.
-I've created a Person Class to hold the mutual proporties and super.print().
+In this project I've used interface. The interface is IFly.
+There are 3 classes of flying items- Bird, Kite and a Plane.
+
+### Interfaces
+* **IFly** - define actions void fly (int speed) & boolean isLand();
+
 
 ### Classes
 
-* **Person** - defines the names, G&S's, CTOR and method.
-1. print() -prints info of Person names.
+* **kite** - implements IFly interface
+defines - price, color and G&S's for them.
+1. fly() -@Override the fly method of IFly and prints birds flight speed.
+2. isLandand() -@Override the isLand method of IFly and prints that it has landed and return true.
 
-* **Pilot** - defines the Pilots license number,	experience, G&S's, CTOR and method.
-1. print() -prints Pilots info and call o super (Person) to print name info.
 
-* **Passenger** - defines the Passenger Passport number, G&S's, CTOR and method.
-1. print() -prints Passenger info and call o super (Person) to print name info.
+* **Bird** - implements IFly interface
+defines - birdType, age, color and G&S's for them.
+1. fly() -@Override the fly method of IFly and prints birds flight speed.
+2. isLandand() -@Override the isLand method of IFly and prints that it has landed and return true.
 
-* **LandStu** - defines the Ground attendant Job title, Country,	experience, G&S's, CTOR and method.
-1. print() -prints Ground attendant info and call o super (Person) to print name info.
 
-* **AirStu** - defines the Flight attendant Working class, Country,	experience, G&S's, CTOR and method.
-1. print() -prints Flight attendant info and call o super (Person) to print name info.
+* **Plane** - implements IFly interface
+defines - name, airline, destination and G&S's for them.
+1. fly() -@Override the fly method of IFly and prints birds flight speed.
+2. isLandand() -@Override the isLand method of IFly and prints that it has landed and return true.
 
-* **App** - defines an Array of "Persons", and inserting an object info of deferent objeccts to it.
-A loop is runing on the Array and checking instanceof to cast the right object and activate print().
-1. print() -prints Flight attendant info and call o super (Person) to print name info.
+* **App** - defines an Array of 10 "IFlys", and sends each pointer to createIFly() to get a new IFly object from it.
+than it sends each oject to get its random flight speed, and then it sends an order to land.
+1. createSpeed() -returns a random speed.
+1. createIFly() -returns a random IFly.
 
 ### Result Image
-![](Result.png)
+![](result.png)
 
 ***
  ### Author
