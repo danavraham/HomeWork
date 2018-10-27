@@ -10,7 +10,6 @@ public class SimpleTime {
 	// -----------CTOR's------------
 	// -----------Default CTOR------------
 	public SimpleTime() {
-
 		this.hour = 0;
 		this.minute = 0;
 		this.second = 0;
@@ -20,7 +19,6 @@ public class SimpleTime {
 	public SimpleTime(int hour, int minute, int second) {
 		super();
 		this.hour = setHour(hour);
-		;
 		this.minute = setMinute(minute);
 		this.second = setSecond(second);
 	}
@@ -54,13 +52,12 @@ public class SimpleTime {
 		return this.second;
 	}
 
-	// -----------------METHOD's
+	// -----------------METHOD's------------
 
 	public void setTime(int setHour, int setMinute, int setSecond) {
 		this.hour = setHour(setHour);
 		this.minute = setMinute(setMinute);
 		this.second = setSecond(setSecond);
-//		System.out.println("Time is now set to: " + toString());
 	}
 
 	public int addHour(int addHour) {
@@ -69,7 +66,6 @@ public class SimpleTime {
 		} else {
 			setHour(getHour() + addHour);
 		}
-//		System.out.println("Time is now set to: " + toString());
 		return getHour();
 	}
 
@@ -80,7 +76,6 @@ public class SimpleTime {
 		} else {
 			setMinute(getMinute() + addMinute);
 		}
-//		System.out.println("Time is now set to: " + toString());
 		return getMinute();
 	}
 
@@ -91,7 +86,6 @@ public class SimpleTime {
 		} else {
 			setSecond(getSecond() + addSecond);
 		}
-//		System.out.println("Time is now set to: " + toString());
 		return getSecond();
 	}
 
@@ -108,14 +102,12 @@ public class SimpleTime {
 	}
 
 	public boolean isEquals(SimpleTime isEqual) {
-	
 		return (isEqual.hour==getHour() && isEqual.minute==getMinute() && isEqual.second==getSecond());
 
 	}
 
 	@Override
 	public String toString() {
-
 		return ((hour > 9 ? hour : "0" + hour) + ":" + (minute > 9 ? minute : "0" + minute) + ":"
 				+ (second > 9 ? second : "0" + second));
 	}

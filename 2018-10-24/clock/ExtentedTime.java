@@ -27,6 +27,7 @@ public class ExtentedTime extends SimpleTime {
 		this.is24Hours = is24Hours;
 	}
 
+	// -----------------METHOD's------------
 	@Override
 	public String toString() {
 		if(is24Hours) {
