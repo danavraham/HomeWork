@@ -1,0 +1,25 @@
+
+<div class="container">
+    <h1>MOVIE LIST</h1>
+  <div class="list">
+    <ol>
+      <li *ngFor="let m of moviesArr"><button (click)="selectMovie(m.movie_name, m.price, m.movie_date )">{{m.movie_name}}</button></li>
+    </ol>
+  </div>
+  <div class="details">
+    <h1>Selected Movie:{{selectedMovie}}</h1>
+    <table border="1">
+      <tr>
+        <th>Country</th>
+        <th>Price</th>
+        <th>Date</th>
+      </tr>
+      <tr>
+        <td>{{country}}</td>
+        <td>{{price}}</td>
+        <td>{{date}}</td>
+      </tr>
+    </table>
+    <button  (click)="resetSelection()">Reset Selection</button>
+  </div>
+</div>

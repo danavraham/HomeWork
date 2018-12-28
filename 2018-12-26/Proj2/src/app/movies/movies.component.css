@@ -1,0 +1,119 @@
+
+.container{
+    margin: auto;
+    width: 350px;
+}
+
+h1{
+    text-align: center;
+   
+				font-size: 24px;
+				padding: 10px;
+				*padding: .4em;
+                margin: auto;
+                height: 1em;
+				width: 300px;
+				background: rgb(231, 211, 24);
+				color: #444;
+				text-decoration: none;
+				-moz-border-radius: .3em;
+				-webkit-border-radius: .3em;
+				border-radius: 29px;
+}
+/* css list with numeber circle background -------------- */
+.list{
+    width: initial;
+    padding: 0 20px
+  
+}
+.list ol{
+    width: initial;           
+    counter-reset: li;
+				list-style: none;
+				*list-style: decimal;
+				font: 25px 'trebuchet MS', 'lucida sans';
+				padding: 0;
+				margin-bottom: 10px;
+
+}
+			
+.list button{
+				position: relative;
+				display: block;
+				padding: .4em .4em .4em 2em ;
+				*padding: .4em .4em .4em 10em;
+                margin: .5em 0;
+                height: 2.2em;
+				width:100%;
+				background: #14c25c;
+				color: rgb(0, 0, 0);
+                text-decoration: none;
+                text-align: left;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px;
+			}
+
+.list button:hover{
+				background: #cbe7f8;
+				text-decoration:none;
+			}
+.list button:before{
+				content: counter(li);
+				counter-increment: li;
+				position: absolute;	
+				left: -1.3em;
+				top: 50%;
+				margin-top: -1.3em;
+				background: #14c25c;
+				height: 2em;
+				width: 2em;
+				line-height: 2em;
+				border: .3em solid #fff;
+				text-align: center;
+				font-weight: bold;
+				-moz-border-radius: 2em;
+				-webkit-border-radius: 2em;
+				border-radius: 2em;
+				color:#FFF;
+			}
+
+/* End css list with numeber circle background -------------- */
+
+
+.details{
+    background-color: rgb(231, 211, 24);
+    margin: 10px;
+    text-align: center;
+		
+				-moz-border-radius: 1em;
+				-webkit-border-radius: 1em;
+                border-radius: 1em;
+                padding: 10px 0 30px 0;
+}
+.details table{
+    width:300px;
+    margin: auto;
+}
+
+button{
+    position: relative;
+    display: block;
+ 
+    margin: 10px auto;
+    height: 2.2em;
+    width: fit-content;
+    background: #cbe7f8;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    outline: none;
+}
+
+button:hover{
+    background: #9bd7fc;
+    text-decoration:none;
+}
